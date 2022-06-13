@@ -3,7 +3,7 @@ const { BigNumber } = require("ethers");
 const { ethers, waffle, artifacts } = require("hardhat");
 const hre = require("hardhat");
 
-const { DAI, DAI_WHALE, POOL_ADDRESS_PROVIDER } = require("../config");
+const { DAI, DAI_WHALE, POOL_ADDRESS_PROVIDER } = require("../config.js");
 
 describe("Deploy a Flash Loan", function () {
   it("Should take a flash loan and be able to return it", async function () {
